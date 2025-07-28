@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Developer Team</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background-color: #ccbcbc;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .home-button {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background-color: rgb(248, 113, 3);
+            color: white;
+            padding: 8px 15px;
+            border-radius: 4px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        .home-button:hover {
+            background-color: rgba(77, 38, 184, 0.678);
+        }
+        .header {
+            position: relative;
+            background: linear-gradient(135deg, #2c3e50, #3498db);
+            color: white;
+            text-align: center;
+            padding: 40px 0;
+            margin-bottom: 30px;
+        }
+        .header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+        }
+        .header p {
+            margin: 10px 0 0;
+            font-size: 1.2rem;
+        }
+        
+        /* Main container for all developers */
+        .developers-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+        
+        /* Individual developer container */
+        .developer-container {
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 100%;
+            max-width: 400px;
+            transition: transform 0.3s ease;
+        }
+        .developer-container:hover {
+            transform: translateY(-10px);
+        }
+        
+        .developer-image {
+            width: 100%;
+            height: 300px;
+            overflow: hidden;
+            position: relative;
+        }
+        .developer-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-bottom: 3px solid #24005f;
+        }
+        
+        .social-links {
+            position: absolute;
+            bottom: 20px;
+            left: 0;
+            right: 0;
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+        .social-links a {
+            color: white;
+            background-color: rgba(36, 0, 95, 0.7);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+        }
+        .social-links a:hover {
+            background-color: #24005f;
+            transform: scale(1.1);
+        }
+        
+        .developer-details {
+            padding: 20px;
+        }
+        .developer-details h2 {
+            color: #24005f;
+            margin: 0 0 5px;
+        }
+        .developer-details .title {
+            color: rgb(248, 113, 3);
+            font-weight: bold;
+            margin: 0 0 15px;
+        }
+        
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 15px;
+        }
+        .skills span {
+            background-color: #e0e0e0;
+            padding: 5px 10px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+        }
+        
+        .accomplishments {
+            list-style: none;
+            padding: 0;
+        }
+        .accomplishments li {
+            padding: 8px 0;
+            border-bottom: 1px solid #eee;
+            display: flex;
+            align-items: center;
+        }
+        .accomplishments li:last-child {
+            border-bottom: none;
+        }
+        .accomplishments i {
+            color: rgb(248, 113, 3);
+            margin-right: 10px;
+        }
+        
+        .footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+        
+        @media (max-width: 768px) {
+            .developer-container {
+                max-width: 100%;
+            }
+            .header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="index.html" class="home-button"><i class="fas fa-home"></i> Home</a>
+        <div class="container">
+            <h1>Our Development Team</h1>
+            <p>Meet the talented engineers behind the website development</p>
+        </div>
+    </header>
+
+    <main class="main-content">
+        <div class="developers-container">
+            <!-- Developer 1 Container -->
+            <div class="developer-container">
+                <div class="developer-image">
+                    <img src="WhatsApp Image 2025-05-02 at 09.23.07_51ad6057.jpg" alt="Royal Kazembe">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:royal@example.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="developer-details">
+                    <h2>Royal Kazembe</h2>
+                    <p class="title">Senior ICT officer</p>
+                    <div class="skills">
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                    </div>
+                    <ul class="accomplishments">
+                        <li><i class="fas fa-trophy"></i> Built scalable e-commerce platform serving 1M+ users</li>
+                        <li><i class="fas fa-trophy"></i> AWS Certified Solutions Architect</li>
+                        <li><i class="fas fa-trophy"></i> Open source contributor with 50+ GitHub repositories</li>
+                        <li><i class="fas fa-trophy"></i> Speaker at DevConf 2022</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Developer 2 Container -->
+            <div class="developer-container">
+                <div class="developer-image">
+                    <img src="WhatsApp Image 2025-05-02 at 09.23.07_51ad6057.jpg" alt="Gamuchirai Pasipanodya">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:gamuchirai@example.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="developer-details">
+                    <h2>Gamuchirai Pasipanodya</h2>
+                    <p class="title">ICT officer</p>
+                    <div class="skills">
+                        <span>Python</span>
+                        <span>Django</span>
+                        <span>PostgreSQL</span>
+                    </div>
+                    <ul class="accomplishments">
+                        <li><i class="fas fa-trophy"></i> Designed high-performance API handling 10K+ requests/sec</li>
+                        <li><i class="fas fa-trophy"></i> Database optimization expert reducing query times by 90%</li>
+                        <li><i class="fas fa-trophy"></i> Created internal developer tools used by 200+ engineers</li>
+                        <li><i class="fas fa-trophy"></i> Author of "Scalable Microservices" book</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- Developer 3 Container -->
+            <div class="developer-container">
+                <div class="developer-image">
+                    <img src="WhatsApp Image 2025-05-02 at 09.23.07_51ad6057.jpg" alt="Munashe Mujuru">
+                    <div class="social-links">
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-facebook"></i></a>
+                        <a href="mailto:munashe@example.com"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+                <div class="developer-details">
+                    <h2>Munashe Mujuru</h2>
+                    <p class="title">ICT officer</p>
+                    <div class="skills">
+                        <span>Web Development</span>
+                        <span>Cyber Security</span>
+                        <span>Information Systems</span>
+                    </div>
+                    <ul class="accomplishments">
+                        <li><i class="fas fa-trophy"></i> Degree in Bachelors Honours in Information Systems</li>
+                        <li><i class="fas fa-trophy"></i> Certificate in Cyber Security</li>
+                        <li><i class="fas fa-trophy"></i> Web application development specialist</li>
+                        <li><i class="fas fa-trophy"></i> Network security implementation</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2023 Developer Team Portfolio. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
